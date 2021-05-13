@@ -4,7 +4,6 @@ const Quiz = require("../models/quiz.model");
 require("dotenv").config();
 
 const QuizData = [
-
   {
     questionText: "右",
     answerOptions: [
@@ -51,7 +50,330 @@ const QuizData = [
       { answerText: 'spirit', isCorrect: true },
       { answerText: 'rain', isCorrect: false },
     ],
-  }]
+  },
+  {
+    questionText: "休",
+    answerOptions: [
+      { answerText: 'ball', isCorrect: false },
+      { answerText: 'gold', isCorrect: false },
+      { answerText: 'rest', isCorrect: true },
+      { answerText: 'nine', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "空",
+    answerOptions: [
+      { answerText: 'sun', isCorrect: false },
+      { answerText: 'sky', isCorrect: true },
+      { answerText: 'spirit', isCorrect: false },
+      { answerText: 'noise', isCorrect: false },
+    ],
+  },
+
+  {
+    questionText: "犬",
+    answerOptions: [
+      { answerText: 'cat', isCorrect: false },
+      { answerText: 'cow', isCorrect: false },
+      { answerText: 'rat', isCorrect: false },
+      { answerText: 'dog', isCorrect: true },
+    ],
+  },
+
+  {
+    questionText: "口",
+    answerOptions: [
+      { answerText: 'sun', isCorrect: false },
+      { answerText: 'moon', isCorrect: false },
+      { answerText: 'mouth', isCorrect: true },
+      { answerText: 'eye', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "月",
+    answerOptions: [
+      { answerText: 'circle', isCorrect: false },
+      { answerText: 'month', isCorrect: true },
+      { answerText: 'year', isCorrect: false },
+      { answerText: 'rain', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "校",
+    answerOptions: [
+      { answerText: 'school', isCorrect: true },
+      { answerText: 'gold', isCorrect: false },
+      { answerText: 'left', isCorrect: false },
+      { answerText: 'right', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "山",
+    answerOptions: [
+      { answerText: 'sun', isCorrect: false },
+      { answerText: 'mountain', isCorrect: true },
+      { answerText: 'child', isCorrect: false },
+      { answerText: 'noise', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "糸",
+    answerOptions: [
+      { answerText: 'letter', isCorrect: false },
+      { answerText: 'ear', isCorrect: false },
+      { answerText: 'thread', isCorrect: true },
+      { answerText: 'dog', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "車",
+    answerOptions: [
+      { answerText: 'hand', isCorrect: false },
+      { answerText: 'child', isCorrect: false },
+      { answerText: 'mouth', isCorrect: false },
+      { answerText: 'car', isCorrect: true },
+    ],
+  },
+  {
+    questionText: "手",
+    answerOptions: [
+      { answerText: 'hand', isCorrect: true },
+      { answerText: 'month', isCorrect: false },
+      { answerText: 'mouth', isCorrect: false },
+      { answerText: 'year', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "女",
+    answerOptions: [
+      { answerText: 'woman', isCorrect: true },
+      { answerText: 'man', isCorrect: false },
+      { answerText: 'left', isCorrect: false },
+      { answerText: 'right', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "小",
+    answerOptions: [
+      { answerText: 'up', isCorrect: false },
+      { answerText: 'small', isCorrect: true },
+      { answerText: 'down', isCorrect: false },
+      { answerText: 'child', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "森",
+    answerOptions: [
+      { answerText: 'letter', isCorrect: false },
+      { answerText: 'forest', isCorrect: true },
+      { answerText: 'person', isCorrect: false },
+      { answerText: 'dog', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "水",
+    answerOptions: [
+      { answerText: 'water', isCorrect: true },
+      { answerText: 'person', isCorrect: false },
+      { answerText: 'life', isCorrect: false },
+      { answerText: 'car', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "青",
+    answerOptions: [
+      { answerText: 'hand', isCorrect: false },
+      { answerText: 'blue', isCorrect: true },
+      { answerText: 'red', isCorrect: false },
+      { answerText: 'mouth', isCorrect: false },
+    ],
+  },
+ 
+  {
+    questionText: "赤",
+    answerOptions: [
+      { answerText: 'blue', isCorrect: false },
+      { answerText: 'red', isCorrect: true },
+      { answerText: 'left', isCorrect: false },
+      { answerText: 'right', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "先",
+    answerOptions: [
+      { answerText: 'up', isCorrect: false },
+      { answerText: 'before', isCorrect: true },
+      { answerText: 'down', isCorrect: false },
+      { answerText: 'after', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "川",
+    answerOptions: [
+      { answerText: 'dog', isCorrect: false },
+      { answerText: 'forest', isCorrect: false },
+      { answerText: 'person', isCorrect: false },
+      { answerText: 'river', isCorrect: true },
+    ],
+  },
+  {
+    questionText: "草",
+    answerOptions: [
+      { answerText: 'water', isCorrect: false },
+      { answerText: 'grass', isCorrect: true },
+      { answerText: 'forest', isCorrect: false },
+      { answerText: 'river', isCorrect: false },
+    ],
+  },
+
+  {
+    questionText: "村",
+    answerOptions: [
+      { answerText: 'village', isCorrect: true },
+      { answerText: 'mouth', isCorrect: false },
+      { answerText: 'leg', isCorrect: false },
+      { answerText: 'bamboo', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "町",
+    answerOptions: [
+      { answerText: 'village', isCorrect: false },
+      { answerText: 'town', isCorrect: true },
+      { answerText: 'left', isCorrect: false },
+      { answerText: 'right', isCorrect: false },
+    ],
+  },
+  {
+    questionText:  "天",
+    answerOptions: [
+      { answerText: 'up', isCorrect: false },
+      { answerText: 'spirit', isCorrect: false },
+      { answerText: 'down', isCorrect: false },
+      { answerText: 'sky', isCorrect: true },
+    ],
+  },
+  {
+    questionText:  "日",
+    answerOptions: [
+      { answerText: 'day', isCorrect: true },
+      { answerText: 'moon', isCorrect: false },
+      { answerText: 'insect', isCorrect: false },
+      { answerText: 'river', isCorrect: false },
+    ],
+  },
+  {
+    questionText:  "年",
+    answerOptions: [
+      { answerText: 'sun', isCorrect: false },
+      { answerText: 'month', isCorrect: false },
+      { answerText: 'year', isCorrect: true },
+      { answerText: 'river', isCorrect: false },
+    ],
+  },
+  {
+    questionText:   "田",
+    answerOptions: [
+      { answerText: 'village', isCorrect: true },
+      { answerText: 'rice field', isCorrect: false },
+      { answerText: 'town', isCorrect: false },
+      { answerText: 'bamboo', isCorrect: false },
+    ],
+  },
+  {
+    questionText:   "白",
+    answerOptions: [
+      { answerText: 'white', isCorrect: true },
+      { answerText: 'red', isCorrect: false },
+      { answerText: 'blue', isCorrect: false },
+      { answerText: 'black', isCorrect: false },
+    ],
+  },
+  {
+    questionText:   "文",
+    answerOptions: [
+      { answerText: 'word', isCorrect: false },
+      { answerText: 'sentence', isCorrect: true },
+      { answerText: 'down', isCorrect: false },
+      { answerText: 'up', isCorrect: false },
+    ],
+  },
+  {
+    questionText:   "本",
+    answerOptions: [
+      { answerText: 'tree', isCorrect: false },
+      { answerText: 'book', isCorrect: true },
+      { answerText: 'person', isCorrect: false },
+      { answerText: 'dog', isCorrect: false },
+    ],
+  },
+  {
+    questionText:   "名",
+    answerOptions: [
+      { answerText: 'name', isCorrect: false },
+      { answerText: 'month', isCorrect: false },
+      { answerText: 'year', isCorrect: true },
+      { answerText: 'person', isCorrect: false },
+    ],
+  },
+  {
+    questionText:   "目",
+    answerOptions: [
+      { answerText: 'hand', isCorrect: false },
+      { answerText: 'eye', isCorrect: true },
+      { answerText: 'foot', isCorrect: false },
+      { answerText: 'mouth', isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:   "豉",
+    answerOptions: [
+      { answerText: 'park', isCorrect: false },
+      { answerText: 'beans', isCorrect: true },
+      { answerText: 'far', isCorrect: false },
+      { answerText: 'black', isCorrect: false },
+    ],
+  },
+  {
+    questionText:   "黄",
+    answerOptions: [
+      { answerText: 'white', isCorrect: false },
+      { answerText: 'yellow', isCorrect: true },
+      { answerText: 'red', isCorrect: false },
+      { answerText: 'green', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "何",
+    answerOptions: [
+      { answerText: 'tree', isCorrect: false },
+      { answerText: 'house', isCorrect: false },
+      { answerText: 'what', isCorrect: true },
+      { answerText: 'meeting', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "会",
+    answerOptions: [
+      { answerText: 'meeting', isCorrect: true },
+      { answerText: 'month', isCorrect: false },
+      { answerText: 'year', isCorrect: false },
+      { answerText: 'park', isCorrect: false },
+    ],
+  },
+  {
+    questionText: "力",
+    answerOptions: [
+      { answerText: 'hand', isCorrect: false },
+      { answerText: 'power', isCorrect: true },
+      { answerText: 'tree', isCorrect: false },
+      { answerText: 'water', isCorrect: false },
+    ],
+  },
+
+];
+
 
 const lesson = [
   {
